@@ -35,9 +35,6 @@ source venv/bin/activate
 pip install -r requirements.txt
 ▶️ Run the Application
 python main.py
-📸 Screenshots
-
-(Add screenshots here later for better presentation)
 
 📌 Future Improvements
 🔍 Search & filter processes
