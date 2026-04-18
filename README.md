@@ -26,7 +26,7 @@ ProcessMonitor/
 │── requirements.txt
 ⚙️ Installation
 1. Clone the repository
-git clone https://github.com/your-username/ProcessMonitor.git
+git clone https://github.com/jaganmohanreddymandli/processmonitor.git
 cd ProcessMonitor
 2. Create virtual environment
 python3 -m venv venv
