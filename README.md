@@ -146,7 +146,7 @@ Add admin privilege code using `ctypes` in Python.
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Authors
 
 * Jaganmohan Reddy, Nithin, Nishar
 * Course: CSE316 - Operating Systems
