@@ -80,6 +80,7 @@ The application also includes a process management module that allows users to m
 git clone https://github.com/jaganmohanreddymandli/processmonitor.git
 cd processmonitor
 python -m venv venv
+venv/Scripts/activate.ps1
 ```
 
 ### 2. Install Dependencies
