@@ -45,7 +45,7 @@ from PySide6.QtGui import (
 #  CONSTANTS & THEME
 # ─────────────────────────────────────────────────────────────
 
-APP_NAME    = "SysWatch Pro"
+APP_NAME    = "System Monitor"
 APP_VERSION = "1.0.0"
 IS_WINDOWS  = platform.system() == "Windows"
 IS_LINUX    = platform.system() == "Linux"
@@ -754,7 +754,8 @@ class ProcessTab(QWidget):
             name  = p.get("name") or ""
             user  = p.get("username") or ""
             status = p.get("status") or ""
-            cpu   = p.get("cpu_percent") or 0.0
+            cpu_raw   = p.get("cpu_percent") or 0.0
+            cpu = cpu_raw / psutil.cpu_count()
             mi    = p.get("memory_info")
             mem_b = mi.rss if mi else 0
             mem_p = p.get("memory_percent") or 0.0
@@ -1249,7 +1250,7 @@ class MainWindow(QMainWindow):
         hdr_lay.setContentsMargins(16, 0, 16, 0)
 
         # Logo / title
-        logo = QLabel("⚡")
+        logo = QLabel("🖥️")
         logo.setStyleSheet("font-size: 22px;")
         title_lbl = QLabel(APP_NAME)
         title_lbl.setStyleSheet(f"color: {TEXT_HEADING}; font-size: 16px; font-weight: 700; letter-spacing: 1px;")
